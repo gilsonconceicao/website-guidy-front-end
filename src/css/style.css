@@ -9,17 +9,17 @@ html {
 }
 
 header {
-    background-color: #64c9f8fb;
+    background-color: #2a2c2c;
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    padding: 0 60px;
-    height: 10vh;
+    padding: 6px 60px;
+    height: 8vh;
 }
 
 .menu-header {
     background-color: #ffffff;
-    height: 90vh;
+    height: 94vh;
     position: absolute;
     right: 0;
     opacity: 0;
@@ -40,6 +40,7 @@ header {
 
 .menu-header a {
     font-size: 20px;
+    border-bottom: 1px solid #11111110;
     color: #000000;
     font-weight: bold;
     text-decoration: none;
@@ -49,7 +50,7 @@ header {
 }
 
 .menu-header a:hover {
-    background-color: #41739b5e;
+    background-color: #4022e94d;
 }
 
 .logo {
@@ -130,7 +131,7 @@ header {
     grid-template-columns: auto auto ;
     align-items: center; 
     max-width: 1100px;
-    margin: 100px auto;
+    margin: 100px auto 50px auto;
 }
 
 .conteiner-developer img {
@@ -162,8 +163,8 @@ section h2 {
 /* Options about languages trail */
 
 .conteiner-options {
-    background-color: #242422;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     display: block;
     margin: auto ;
     padding: 20px 0 ;
@@ -188,8 +189,7 @@ section h2 {
 }
 
 .languages-title  {
-    background-color: #39eea8fb;
-    box-shadow: 0 0 10px #333131;
+    border: 1px solid #3f3f3f;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
@@ -200,8 +200,12 @@ section h2 {
     margin: 30px 10px;
 }
 
+.languages-title:hover {
+    background-color: #00000017;
+}
+
 .box-languages {
-    background-color: #ffffff;
+    border: 1px solid black;
     color: black;
     font-size: 20px;
     line-height: 1.6em;
@@ -240,11 +244,24 @@ abbr {
         padding: 0 10px;
     }
 
+    .welcome-web-page {
+        padding: -20px 0 ;
+    }
+
     /* wrap p - h1 - section*/ 
     .text-about p {
         border: none;
-        font-size: 16px;
+        font-size: 20px;
         padding: 0;
+        margin: 20px 10px;
+    }
+
+    .conteiner-developer h2 {
+        text-align: left;
+        font-size: 1.7em;
+    }
+    .conteiner-options h2 {
+        font-size: 2em;
     }
 }
 
@@ -277,8 +294,16 @@ abbr {
     }
 
     .conteiner-options {
-        margin: auto 10px;
+        margin: auto 20px;
     } 
+
+    .conteiner-options p {
+        text-align: left;
+    }
+
+    .conteiner-options h2 {
+        text-align: left;
+    }
 
     .menu-header {
         overflow-x: hidden;
@@ -317,10 +342,6 @@ abbr {
 }
 
 @media screen and (max-width: 370px) {
-    .welcome-web-page {
-        height: 95vh;
-    }
-
     .menu-header {
         overflow-x: hidden;
     }
