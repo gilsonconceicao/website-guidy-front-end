@@ -25,15 +25,16 @@ header {
     background-color: #ffffff;
     height: 90vh;
     position: absolute;
-    transform: translateX(100%);
+    transform: translateX(540px);
     right: 0;
-    width: 100%;
+    width: 40%;
     z-index: 10;
     transition: all .4s;
 }
 
 .nav-list-active {
     transform: translateX(0);
+    overflow-x: hidden;
 }
 
 
@@ -312,10 +313,18 @@ abbr {
         width: 100%;
         transition: .3s;
     }
+
+    body {
+        overflow-x: hidden;
+    }
 }
 
 @media screen and (max-width: 370px) {
     .welcome-web-page {
         height: 95vh;
+    }
+
+    body {
+        overflow-x: hidden;
     }
 }
