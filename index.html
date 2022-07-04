@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="src/js/navBar.js" defer></script>
     <script src="src/js/interactOptions.js" defer></script>
-</head> 
+    <script src="src/js/requestPageBack.js" defer></script>
+</head>
+
 <body>
     <header>
         <a href="" class="logo"><i class="fa-brands fa-buffer"></i></a>
@@ -20,8 +22,8 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="index.html#frontEnd">Front-end</a></li>
-            <li><a href="#">Back-end</a></li>
-            <li><a href="#">Request-Api</a></li>
+            <li><a href="back-end.html">Back-end</a></li>
+            <li><a href="#" onclick="sorryUser()">Request-Api</a></li>
         </ul>
     </nav>
     <section class="welcome-web-page">
@@ -45,7 +47,7 @@
             <a href="index.html#frontEnd" class="letsgo"><i class="fa-solid fa-angles-down"></i></a>
         </article>
     </section>
- 
+
     <section id="frontEnd" class="conteiner-options">
         <div class="content-text-interation">
             <div class="box-about">
@@ -94,7 +96,8 @@
                         </p>
                         <br>
                         <p>Também sou utilizado no back-end com a engine V8 do google intepratada por script, surgi no
-                            <a href="">Node JS</a> também.</p>
+                            <a href="">Node JS</a> também.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -117,8 +120,11 @@
                 </span>
                 <div class="box-languages">
                     <h3>Biblioteca do JavaScript</h3>
-                    <p>O <strong>React</strong> é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.
-                    É mantido pelo Facebook, Instagram, outras empresas e uma comunidade de <strong>desenvolvedores</strong> individuais. É utilizado nos sites da Netflix, Imgur, Feedly, Airbnb, SeatGeek, HelloSign, Walmart e outros.</p>
+                    <p>O <strong>React</strong> é uma biblioteca JavaScript de código aberto com foco em criar
+                        interfaces de usuário em páginas web.
+                        É mantido pelo Facebook, Instagram, outras empresas e uma comunidade de
+                        <strong>desenvolvedores</strong> individuais. É utilizado nos sites da Netflix, Imgur, Feedly,
+                        Airbnb, SeatGeek, HelloSign, Walmart e outros.</p>
                 </div>
             </div>
 
@@ -129,7 +135,10 @@
                 </span>
                 <div class="box-languages">
                     <h3>Framework do JavaScript</h3>
-                    <p>Angular é uma plataforma de aplicações web de código-fonte aberto e front-end baseado em TypeScript liderado pela Equipe Angular do Google e por uma comunidade de indivíduos e corporações. Angular é uma reescrita completa do AngularJS, feito pela mesma equipe que o construiu.</p>
+                    <p>Angular é uma plataforma de aplicações web de código-fonte aberto e front-end baseado em
+                        TypeScript liderado pela Equipe Angular do Google e por uma comunidade de indivíduos e
+                        corporações. Angular é uma reescrita completa do AngularJS, feito pela mesma equipe que o
+                        construiu.</p>
                 </div>
             </div>
 
@@ -140,7 +149,9 @@
                 </span>
                 <div class="box-languages">
                     <h3>Biblioteca do JavaScript</h3>
-                    <p>jQuery é uma biblioteca de funções JavaScript que interage com o HTML, desenvolvida para simplificar os scripts interpretados no navegador do cliente. Usada por cerca de 74.4% dos 10 mil sites mais visitados do mundo, jQuery é a mais popular das bibliotecas JavaScript.</p>
+                    <p>jQuery é uma biblioteca de funções JavaScript que interage com o HTML, desenvolvida para
+                        simplificar os scripts interpretados no navegador do cliente. Usada por cerca de 74.4% dos 10
+                        mil sites mais visitados do mundo, jQuery é a mais popular das bibliotecas JavaScript.</p>
                 </div>
             </div>
 
@@ -151,29 +162,49 @@
                 </span>
                 <div class="box-languages">
                     <h3>Framework do JavaScript</h3>
-                    <p>Vue.js é um framework JavaScript de código-aberto, focado no desenvolvimento de interfaces de usuário e aplicativos de página única. </p>
+                    <p>Vue.js é um framework JavaScript de código-aberto, focado no desenvolvimento de interfaces de
+                        usuário e aplicativos de página única. </p>
                 </div>
             </div>
     </section>
+
+    <!-- ---------------------------- LANGUAGES BACK END - CHAMADA -------------------- -->
+
+    <div class="box-links-backend"> 
+        <a href="back-end.html" class="btns-back-end">Conheça o back end</a>
+        <a href id="requestHTML" guide-Link="/back-end.html" class="btns-back-end">Linguagens back end</a>
+    </div>
+
+    <div id="conteudo" class="conteiner-developer">
+
+    </div>
+
 
     <footer>
         <div class="container-footer">
             <div>
                 <h3>Documentation languages</h3>
                 <ul>
-                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">&#128279; JavasScript</a></li>
-                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">&#128279; HTML</a></li>
-                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">&#128279; CSS</a></li>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">&#128279;
+                            JavasScript</a></li>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">&#128279; HTML</a>
+                    </li>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">&#128279; CSS</a>
+                    </li>
                 </ul>
                 <h3>Documentation Framework</h3>
                 <ul>
-                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started" target="_blank">&#128279; React</a></li>
-                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">&#128279; Angular</a></li>
-                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Glossary/jQuery" target="_blank">&#128279; Jquery</a></li>
-                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Vue_getting_started" target="_blank">&#128279; Vue</a></li>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started"
+                            target="_blank">&#128279; React</a></li>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">&#128279;
+                            Angular</a></li>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Glossary/jQuery" target="_blank">&#128279;
+                            Jquery</a></li>
+                    <li><a href="https://developer.mozilla.org/pt-BR/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Vue_getting_started"
+                            target="_blank">&#128279; Vue</a></li>
                 </ul>
             </div>
-            <div>           
+            <div>
                 <h3>Redes Sociais</h3>
                 <ul>
                     <li><a href="https://www.linkedin.com/in/gilson-conceicao/" target="_blank">LinkedIn</a></li>
@@ -183,11 +214,13 @@
             <div>
                 <h3>About project</h3>
                 <ul>
-                    <li><a href="https://github.com/gilsonconceicao/website-guidy-front-end" target="_blank">Link do projeto</a></li>
+                    <li><a href="https://github.com/gilsonconceicao/website-guidy-front-end" target="_blank">Link do
+                            projeto</a></li>
                 </ul>
                 <p style="font-size: 16px; color: #380fcd;"><em>Be more you!</em></p>
             </div>
         </div>
     </footer>
 </body>
+
 </html>

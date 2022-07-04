@@ -25,7 +25,7 @@ header {
     right: 0;
     opacity: 0;
     width: 40%;
-   
+   z-index: -10;
     transition: all .7s;
 }
 
@@ -82,6 +82,14 @@ header {
 
 .welcome-web-page {
     background-image: url(../img/background-front-end.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 94vh;
+}
+
+#welcome-backend {
+    background-image: url(../img/background-backend.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -194,6 +202,7 @@ section h2 {
     border: 1px solid #3f3f3f;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     cursor: pointer;
     font-weight: bold;
     border-radius: 7px;
@@ -235,6 +244,49 @@ section h2 {
     margin-bottom: 90px;
 }
 
+
+
+/* -----------  back end about page ------------  */
+
+#backEnd {
+    margin: 10px auto 10px auto; 
+}
+
+#back-end-guide {
+    max-width: 600px;
+    margin: auto;
+}
+
+#back-end-guide .box-languages {
+    display: block;
+}
+
+/* CHAMADAS PARA LINKS  */
+
+.box-links-backend {
+    display: flex;
+    max-width: 500px;
+    flex-wrap: wrap;
+    margin: 0 auto 5% auto;
+}
+
+.btns-back-end {
+    background-color: #4022e9;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 20px;
+    display:block;
+    margin: 10px auto;
+    padding: 20px;
+    transition: .3s;
+}
+
+.btns-back-end:hover {
+    background-color: #1745a9;
+}
+
 /* footer - rodapé*/
 
 footer {
@@ -251,6 +303,8 @@ footer {
     flex-wrap: wrap;
     margin: auto;
 }
+
+
 
 footer h3 {
     color: #6d0bc9;
